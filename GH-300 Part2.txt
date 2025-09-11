@@ -1,0 +1,95 @@
+ Developer use cases for AI with GitHub Copilot 
+===============================================
+Code suggestions || Language support || Documentation integration
+
+Minimizing context switching through In-editor assistance,Quick references, Code completion.
+
+Enhanced documentation writing through Inline comments, Function descriptions, README generation, Documentation consistency.
+
+Automating the boring stuff through Boilerplate code generation,Sample data creation during testing,  Writing unit tests, Code translation and refactoring.
+
+Code refactoring - Pattern recognition , Modern syntax suggestions,
+Consistency maintenance.
+
+Debugging assistance- Error explanation, Log statement generation,
+Test case suggestions.
+
+Get a summary of GitHub Copilot usage for an enterprise team := Endpoint: GET /enterprises/{enterprise}/team/{team_slug}/GitHub Copilot/usage
+
+This endpoint provides a daily breakdown of aggregated usage metrics for GitHub Copilot completions and GitHub Copilot Chat within a specific enterprise team.
+
+Get a summary of GitHub Copilot usage for organization members:= Endpoint: GET /orgs/{org}/GitHub Copilot/usage
+
+This endpoint provides a daily breakdown of aggregated usage metrics for GitHub Copilot completions and GitHub Copilot Chat across an organization.
+
+Develop unit tests using GitHub Copilot tools 
+=============================================
+Set up your testing framework
+----------------------------
+
+Open the Chat view.
+
+Enter the /setupTests command in the chat input field.
+
+Follow GitHub Copilot's guidance to configure your project.
+
+Write unit tests with GitHub Copilot through Chat view, Inline Chat, 
+Smart actions, Code line completions.
+
+Fix failing tests
+-----------------
+
+Open the Chat view.
+
+Enter the /fixTestFailure slash command.
+
+xUnit
+Open the Command Palette and select .NET:New Project... then select xUnit Test Project and provide name and location for the new project. This command creates a new project and directory that uses xUnit as the test library and configures the test runner by adding the following <PackageReference /> elements to the project file.
+
+NUnit
+Open the Command Palette and select .NET:New Project... then select NUnit3 Test Project and provide name and location for the new project. This command creates a new project and directory that uses NUnit as the test library and configures the test runner by adding the following <PackageReference /> elements to the project file.
+
+MSTest
+Open the Command Palette and select .NET:New Project... then select MSTest Test Project and provide name and location for the new project. This command creates a new project and directory that uses MSTest as the test library and configures the test runner by adding the following <PackageReference /> elements to the project file.
+
+The Generate Tests smart action is a feature of GitHub Copilot that helps you create unit tests for your code. It analyzes the code in the current file and generates test cases based on the code's structure and behavior. This feature is particularly useful for developers who want to ensure their code is thoroughly tested and meets quality standards.
+
+The Inline Chat feature of GitHub Copilot allows you to create unit tests directly in the code editor. This is useful when you want to create tests for specific functions or methods without having to switch to the Chat view, but want more control than the Generate Tests smart action provides.
+
+The Chat view in Visual Studio Code provides three modes that can be used to create unit tests: Ask, Edit, and Agent. Each mode has its own strengths and weaknesses, and the best mode to use depends on the specific task at hand.
+
+The ask mode is optimized for asking questions about your code projects, coding topics, and general technology concepts.
+The edit mode is optimized for making edits across multiple files in your codebase.
+The agent mode is optimized for starting an agentic coding workflow.
+
+Introduction to GitHub Copilot Business 
+========================================
+GitHub Copilot Business focuses on making your organization more productive, secure, and fulfilled by enabling your developers to code faster and focus on more satisfying work.
+
+
+Exclude specific files from GitHub Copilot
+Organization-wide policy management
+Audit logs
+Increase GitHub Models rate limits
+
+
+Introduction to GitHub Copilot Enterprise
+==========================================
+
+Knowledge bases and custom models :- Organization owners utilizing GitHub Copilot Enterprise can create customized knowledge bases, bringing together Markdown documentation across one or more repositories, pulling from code snippets, documentation, and other markdown files to help train GitHub Copilot Enterprise to the organization’s specific needs.
+
+
+Chat customization to your codebase: GitHub Copilot Enterprise allows developers to use GitHub Copilot Chat to create prompts that are customized to your codebase. This feature opens up a world of new possibilities, enabling developers to apply it directly within issues, pull requests, code files within Codespaces, and even directly on repositories.
+
+
+Pull request summaries:- GitHub Copilot Enterprise allows developers to generate summaries of pull requests based on the code changes. This aims to reduce the time and efforts needed to create informative pull request descriptions, enhancing understanding and accelerating review processes allowing the reviewers to quickly grasp what the changes involve and areas requiring attention.
+
+
+Documentation search and summaries using docsets:- Docsets are private custom collections of internal code and documentation tailored to organizations' specific needs and workflows. GitHub Copilot Enterprise docset management can help you find the answers you're looking for and present them to you succinctly. For example, GitHub Copilot Enterprise docset management can answer specific questions about using a particular library or framework, so that you don't have to search the whole docset.
+
+
+Code review:-Copilot code review takes collaboration to the next level by providing insightful assistance right within your codebase.
+
+Just like in a code editor, Copilot can explain selected code snippets throughout your codebase, helping developers understand their teammates' intent and providing clarity on complex portions of code.
+
+
